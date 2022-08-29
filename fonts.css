@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    
+    font-family: 'Source+Sans+Pro', sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    font-weight: normal;
+    color: #0f141e;
+    background: #f1f1f1; 
+    /* font: normal 20px 'Roboto', sans-serif; */
+   
+}
+
+.skill p {
+    font-size: 15px;
+    font-family: Verdana;
+    font-weight: normal;
+}

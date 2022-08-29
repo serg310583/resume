@@ -1,0 +1,58 @@
+
+.foto {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 28px; ;
+}
+.card {
+    padding: 10px; margin: 8px 8px 8px 0px; width: 20cm; border-radius: 10pt; 
+    /* тень карточек */
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}        
+.work {
+    background-color: rgb(225, 240, 202);  
+}
+.education {
+    background-color: rgb(235, 235, 189);
+}
+.hobby {
+    background-color: powderblue;
+}
+.contact {
+    background-color: rgb(162, 219, 151);
+}
+.send {
+    background-color: rgb(221, 213, 213);
+}
+.skill {
+    background-color: rgb(221, 213, 213);
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+.btn {
+    background: rgb(159, 137, 137);
+    padding: 15px 20px;
+    color: rgb(8, 6, 6);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    opacity: .8;
+}

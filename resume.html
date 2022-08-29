@@ -4,71 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
     <title>Resume</title>
-</head>
-<body>
- <img src="img/IMG_20160930_140329.jpg" width="200" alt="Фото">
- <h1>Целовальников Сергей</h1>
- 
- <p>Я ученик <strong> курса HTML и CSS</strong>, который разработал основатель онлайн школы по программированию <strong> Result Scool Владилен Минин</strong></p>
- <hr>
- <p>Я обязательно научусь программированию, так как я <em>целеустремленный, уситчевый, молодой</em> человек </p>
- <h4>Список социальных сетей:</h4>
- <a href="https://ok.ru/sergey.tselovalnikov" target="_blank">Одноклассники</a>
- I 
- <a href="https://vk.com/sergey.tselovalnikov" target="_blank">Вконтакте</a>
-
- <h2>Мои хобби</h2>
-
- <ol>
-<li>рыбалка;</li>
-<li>походы на выживание;</li>
-<li>ремонт автомобиля;</li>    
- </ol>
-<h2>Опыт работы:</h2>
- <table>
-    <thead>
-       <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-        </tr> 
-    </thead>
-    <tbody>
-    <tr>
-        <td>УФК по Красноярскому краю</td>
-        <td>Специалист 1 разряда</td>
-        <td>2006 - 2013</td>
-    </tr>
-    <tr>
-        <td>УФК по Красноярскому краю</td>
-        <td>Старший казначей</td>
-        <td>2013 - по сейчас</td>
-    </tr>
-    </tbody>   
-</table>
-<h2>Связаться со мной</h2>
- <form>
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="Введите ваше имя" placeholder="Введите имя">
-    </div>
-
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение ..."></textarea>   
+    <style>
         
-    </div>
-    <div>
-        <input type="submit" value="Отправить!">
+        .container {
+            max-width: 750px;
+            margin: auto;
+        }
+    </style>
+</head>
+<header id="header" style="border: background rgb(224, 215, 211)">
+    <div class="container">
+        <body>
+            <img class="foto" src="img/IMG_20160930_140329.jpg" width="230" alt="Фото" align="left" style="margin: 0px 12px 0px 0px;">
+            
+            <div><h1>Целовальников Сергей <br>Владимирович</h1>
+            <h3>39 лет (родился 31 мая 1983), высшее образование, <br> Гражданство: Россия.</h3>
+           </div>
+    
+           <h2>Junior Frontend-разработчик</h2>
+            
+            <div class="card1 treb">
+            <p>Занятость: Частичная занятость</p>
+            <p>График работы: Удаленная работа</p>
+            <p>Готовность к командировка: нет</p>
+           </div>
+             <br>  
+            <h3>100 000 руб.</h3>        
+           
+            <h2>О себе:</h2>
+            <div class="card education"><p><strong>Образование:</strong></p>
+    
+            <table>
+                <thead>
+                    <tr>
+                        <th>Год</th>
+                        <th>Образовательное учреждение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2000-2005 <br>очное, дневное</td>
+                        <td>"Московский государственный университет экономики статистики и информатики (МЭСИ)"</td>
+                    </tr>
+                    <tr>
+                        <td>2000-2005 <br>очное, дневное</td>
+                        <td>НОУ ВПО "Хакаский институт бизнеса"</td>                
+                    </tr>
+                </tbody>
+            </table></div>
+    
+            <div class="card skill">
+                <p><strong>Профессиональные навыки</strong></p>
+                <ul>
+                    <li>опыт работы с HTML5, CSS3, JS;</li>
+                    <li>знание JavaScript</li>
+                    <li>опыт адаптивной верстки</li>
+                    <li>опыт создания HTML-страницы сайта на основе дизайн-макетов</li>
+                    <li>знание CSS-фреймворков</li>
+                </ul>
+                <p><strong>Дополнительные сведения</strong></p>
+                <p>Умение работать в режиме многозадачности и высокие аналитические способности позволяют мне эффективно работать с большими объёмами информации, быстро находить качественные решения сложных задач.</p>  
+            </div>
+            
+            <div class="card work"><p><strong>Опыт работы:</strong></p>
+            <table class="table work">
+               <thead>
+                  <tr>
+                   <th>Название</th>
+                   <th>Должность</th>
+                   <th>Год</th>
+                   </tr> 
+               </thead>
+               <tbody>
+               <tr>
+                   <td>УФК по Красноярскому краю</td>
+                   <td>Специалист 1 разряда</td>
+                   <td>2006 - 2013</td>
+               </tr>
+               <tr>
+                   <td>УФК по Красноярскому краю</td>
+                   <td>Старший казначей</td>
+                   <td>2013 - по сейчас</td>
+               </tr>
+               </tbody>   
+           </table></div>
+    
+           <div class="card hobby">
+            <p><strong>Увлечения:</strong></p>
+            <ul>
+                <li>просмотр научно-позновательных фильмов;</li>
+                <li>музыка new-age, русский рок, disco;</li>
+                <li>ремонт любой техники;</li>
+            </ul> 
+           </div>        
+                  
+           <div class="card contact">
+            <h2>Мои контакты</h2>
+            <p><strong>Телефон:</strong> 89135647036</p>
+           
+            <p><strong>Социальные сети:</strong></p>
+         <a href="https://ok.ru/sergey.tselovalnikov" target="_blank">Одноклассники</a>
+         I 
+         <a href="https://vk.com/sergey.tselovalnikov" target="_blank">Вконтакте</a>
+         <br>
+         <br>
+            </div>
+            
+            <div class="card send">
+                <h2>Связаться со мной</h2>
+                <form>
+                    <div>
+                   <label for="name">Ваше имя:</label>
+                   <input type="text" id="Введите ваше имя" placeholder="Введите имя">
+                    </div>
+           
+                    <div>
+                   <label for="email">Ваш email:</label>
+                   <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                    <div>
+                   <label for="message">Ваше сообщение:</label>
+                   <br>
+                   <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение ..."></textarea>               
+                    </div>
+                    <div>
+                   <button class="btn">Отправить!</button>
+                   <br>
+                   <br>
+                    </div>
+            </div>      
+           
+            </form>
+           
+           </body>        
     </div>
 
- </form>
-
-</body>
+    
+</header>
 </html>                 
