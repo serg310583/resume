@@ -12,32 +12,37 @@
         .container {
             max-width: 750px;
             margin: auto;
-        }
+        }        
+        
     </style>
 </head>
 <header id="header" style="border: background rgb(224, 215, 211)">
     <div class="container">
         <body>
-            <img class="foto" src="img/IMG_20160930_140329.jpg" width="230" alt="Фото" align="left" style="margin: 0px 12px 0px 0px;">
+            <div class="info">               
+
+                <img class="avatar" src="img/IMG_20160930_140329.jpg" width="230" height="300" alt="Фото">
+               
+                <div class="text">                
+                <h1>Целовальников Сергей <br>Владимирович</h1>
+                <h3>39 лет (родился 31 мая 1983), высшее образование, <br> Гражданство: Россия.</h3>
+                <h2>Junior Frontend-разработчик</h2>
+                <h3>100 000 руб.</h3>
+                </div>
+           </div>  
+           
             
-            <div><h1>Целовальников Сергей <br>Владимирович</h1>
-            <h3>39 лет (родился 31 мая 1983), высшее образование, <br> Гражданство: Россия.</h3>
-           </div>
-    
-           <h2>Junior Frontend-разработчик</h2>
-            
-            <div class="card1 treb">
+            <div class="card treb">
             <p>Занятость: Частичная занятость</p>
             <p>График работы: Удаленная работа</p>
             <p>Готовность к командировка: нет</p>
            </div>
-             <br>  
-            <h3>100 000 руб.</h3>        
-           
+             
             <h2>О себе:</h2>
-            <div class="card education"><p><strong>Образование:</strong></p>
+            <div class="card education">
+                <p><strong>Образование:</strong></p>
     
-            <table>
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Год</th>
@@ -58,7 +63,7 @@
     
             <div class="card skill">
                 <p><strong>Профессиональные навыки</strong></p>
-                <ul>
+                <ul class="list">
                     <li>опыт работы с HTML5, CSS3, JS;</li>
                     <li>знание JavaScript</li>
                     <li>опыт адаптивной верстки</li>
@@ -115,21 +120,26 @@
             
             <div class="card send">
                 <h2>Связаться со мной</h2>
-                <form>
-                    <div>
-                   <label for="name">Ваше имя:</label>
-                   <input type="text" id="Введите ваше имя" placeholder="Введите имя">
+                <form action="/" class="form">
+                    <div class="form-row">
+
+                     <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="Введите ваше имя" placeholder="Введите имя">
+                     </div>
+            
+                     <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                     </div>
+
                     </div>
-           
-                    <div>
-                   <label for="email">Ваш email:</label>
-                   <input type="email" id="email" placeholder="Введите email">
-                    </div>
-                    <div>
-                   <label for="message">Ваше сообщение:</label>
-                   <br>
+
+                    <div class="form-group">
+                   <label for="message">Ваше сообщение:</label>        
                    <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение ..."></textarea>               
                     </div>
+
                     <div>
                    <button class="btn">Отправить!</button>
                    <br>
